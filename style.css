@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400&family=Montserrat:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,400;1,500&display=swap");
+@font-face {
+  font-family: akira;
+  src: url(Akira.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+h1 {
+  font-family: akira;
+  font-size: 55px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-family: akira;
+  font-size: 50px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 30px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 25px;
+  color: grey;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m2 {
+  margin: 40px 0;
+}
+
+button.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+body {
+  width: 100%;
+}
+
+/* Header start */
+
+.logo {
+  width: 150px;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 80px;
+  background-color: #e3e6f3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding-left: 65px;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  transition: 0.3s ease;
+  padding: 0 7px;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: cornflowerblue;
+}
+
+#navbar li a.active::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: cornflowerblue;
+}
+
+/* Home Page */
+#hero {
+  background-image: url(img/home-01.jpg);
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#hero h4 {
+  padding-bottom: 15px;
+}
+
+#hero h1 {
+  color: cornflowerblue;
+}
+
+#hero button {
+  border: none;
+  background-color: #e3e6f3;
+  background-repeat: no-repeat;
+  border-radius: 35px;
+  padding: 14px 70px 14px 70px;
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  color: cornflowerblue;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 450;
+  font-weight: 700;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.cover1 {
+  width: 30%;
+  height: 30%;
+}
+
+#product1 {
+  text-align: center;
+}
+
+#product1 .pro-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+#product1 .pro {
+  width: 23%;
+  min-width: 20px;
+  padding: 10px 12px;
+  border: 1px solid #e3e6f3;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 15px 0;
+  transition: 0.2s ease;
+}
+
+#product1 .pro:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+#product1 .pro .des {
+  text-align: start;
+  padding: 10px 0;
+}
+
+#product1 .pro .des h4 {
+  padding: 7px;
+  color: #1a1a1a;
+  font-size: 20px;
+}
+
+#product1 .pro .des i {
+  font-size: 14px;
+  color: rgb(250, 203, 50);
+  padding-left: 5px;
+}
+
+#product1 .pro .des .price {
+  color: #0ea096;
+}
+
+.but-buy {
+  background-color: #1a1a1a;
+  border-radius: 35px;
+  color: white;
+  padding: 7px 10px;
+  margin-left: 70%;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(img/banner/banner1-02.jpg);
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner h4 {
+  color: cornflowerblue;
+  font-size: 30px;
+}
+
+#banner h2 {
+  color: cornflowerblue;
+  font-size: 40px;
+  padding: 10px, 0;
+}
+
+.disc {
+  font-family: akira;
+  color: #fff;
+}
+
+#banner button:hover {
+  background-color: #0ea096;
+  color: #fff;
+}
+
+.nekostuff {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 60vh;
+  width: 100%;
+  background-size: cover;
+  padding-right: 0;
+}
+
+.neko-pro {
+  width: 50%;
+  min-width: 20px;
+  padding: 20px 20px;
+  border: 1px solid #ccd0e4;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 15px 0;
+  transition: 0.2s ease;
+}
+
+.neko-pro:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
