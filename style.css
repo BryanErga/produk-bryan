@@ -10,6 +10,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "League Spartan", sans-serif;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -157,6 +158,9 @@ body {
   transition: 0.4s;
 }
 
+#hero button:hover {
+  transform: scale(1.2);
+}
 .cover1 {
   width: 30%;
   height: 30%;
@@ -260,29 +264,169 @@ body {
   color: #fff;
 }
 
-.nekostuff {
-  justify-content: center;
+.product {
   display: flex;
-  align-items: center;
-  height: 60vh;
+  text-align: center;
+  flex-direction: row;
   width: 100%;
-  background-size: cover;
-  padding-right: 0;
+  border: 2px solid #e3e6f3;
+  border-radius: 20px;
 }
 
-.neko-pro {
+.content {
   width: 50%;
-  min-width: 20px;
-  padding: 20px 20px;
-  border: 1px solid #ccd0e4;
+}
+
+.content img {
+  width: 100%;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.des-prod {
+  width: 50%;
+  text-align: left;
+  align-items: center;
+  padding: 20px;
+}
+
+.des-prod h4 {
+  font-weight: 500;
+  font-size: 30px;
+  padding: 30px 0 40px 0;
+}
+
+.des-prod h3 {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+footer {
+  background-color: #e3e6f3;
+}
+
+.footerContainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.contact-footer {
+  display: flex;
+  justify-content: center;
+  padding: 90px 0 0 ;
+}
+
+.contact-footer h3 {
+  font-size: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.social-icons a {
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px;
+}
+
+.social-icons a i {
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+  transition: 0.4s;
+}
+
+.social-icons a:hover i {
+  color: cornflowerblue;
+  transform: scale(1.5);
+  margin: 0 10px 0px 10px;
+}
+
+.footer-bottom {
+  padding: 15px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #111;
+  font-size: 20px;
+}
+
+.designer {
+  font-weight: 600;
+  color: cornflowerblue;
+}
+
+/* Shop section */
+
+#product-shop {
+  text-align: center;
+}
+
+#product-shop .pro-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #9c9faa;
+  border-radius: 25px;
+  padding: 10px;
+  flex-wrap: wrap;
+} 
+
+#product-shop .pro {
+  width: 15%;
+  padding: 10px 12px;
+  border: 1px solid #e3e6f3;
   border-radius: 25px;
   cursor: pointer;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-  margin: 15px 0;
+  margin: 15px 15px;
   transition: 0.2s ease;
 }
 
-.neko-pro:hover {
+#product-shop .pro:hover {
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
 }
 
+#product-shop .pro img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+#product-shop .pro .des {
+  text-align: start;
+  padding: 10px 0;
+}
+
+#product-shop .pro .des h4 {
+  padding: 7px;
+  color: #1a1a1a;
+  font-size: 20px;
+}
+
+#product-shop .pro .des i {
+  font-size: 14px;
+  color: rgb(250, 203, 50);
+  padding-left: 5px;
+}
+
+#product-shop .pro .des .price {
+  color: #0ea096;
+}
+
+.but-buy {
+  background-color: #1a1a1a;
+  border-radius: 35px;
+  color: white;
+  padding: 7px 10px;
+  margin-left: 70%;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.prod-shop {
+  overflow-x: auto;
+}
